@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-accent-300: #93c5fd;
+  --color-accent-400: #60a5fa;
+  --color-accent-500: #3b82f6;
+  --color-accent-600: #2563eb;
+  --color-accent-700: #1d4ed8;
+}
+
+@layer base {
+  html {
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-white text-gray-800;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-black;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  p {
+    @apply my-4;
+  }
+
+  a {
+    @apply text-accent-600 hover:text-accent-700 transition-colors;
+  }
+
+  .cta-button {
+    @apply bg-accent-600 hover:bg-accent-700 text-white font-medium py-2 px-4 rounded transition-colors inline-flex items-center justify-center;
+  }
+
+  .client-logo {
+    @apply grayscale hover:grayscale-0 transition-all duration-300 ease-in-out;
+  }
+}

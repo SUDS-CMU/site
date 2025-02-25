@@ -1,0 +1,44 @@
+[
+  {
+    "name": "APA",
+    "logo": "clients/apa.png",
+    "url": "https://apa-pgh.org/",
+    "description": "Association for Police Accountability - Promoting police accountability and transparency"
+  },
+  {
+    "name": "Caring Place",
+    "logo": "clients/caring-place.png",
+    "url": "https://www.highmarkcaringplace.com",
+    "description": "The Caring Place - A center for grieving children, adolescents and their families"
+  },
+  {
+    "name": "Innovation & Performance",
+    "logo": "clients/i&p.png",
+    "url": "https://www.pittsburghpa.gov/Business-Development/Innovation-Performance",
+    "description": "Pittsburgh's Department of Innovation & Performance - Improving city services through technology and data"
+  },
+  {
+    "name": "Women's Center & Shelter",
+    "logo": "clients/wc&s.webp",
+    "url": "https://www.wcspittsburgh.org",
+    "description": "Women's Center & Shelter of Greater Pittsburgh - Supporting victims of domestic violence"
+  },
+  {
+    "name": "CeaseFirePA",
+    "logo": "clients/ceasefirepa.png",
+    "url": "https://www.ceasefirepa.org/",
+    "description": "CeaseFirePA - Reducing gun violence in Pittsburgh"
+  },
+  {
+    "name": "BikePGH",
+    "logo": "clients/bikepgh.png",
+    "url": "https://www.bikepgh.org/",
+    "description": "BikePGH - Promoting cycling and bike safety in Pittsburgh"
+  },
+  {
+    "name": "Friends of the Riverfront",
+    "logo": "clients/friendsoftheriverfront.png",
+    "url": "https://www.friendsoftheriverfront.org/",
+    "description": "Friends of the Riverfront - Promoting the development of the Pittsburgh Riverfront"
+  }
+] 

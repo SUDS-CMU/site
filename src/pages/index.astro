@@ -1,18 +1,137 @@
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			http-equiv="refresh"
-			content="0;url=https://ziningc7.wixsite.com/cmusuds"
-		/>
-		<title>Redirecting...</title>
-	</head>
-	<body>
-		<p>
-			Redirecting to <a href="https://ziningc7.wixsite.com/cmusuds"
-				>https://ziningc7.wixsite.com/cmusuds</a
-			>...
-		</p>
-	</body>
-</html>
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import hammerschlagImg from "../assets/hammerschlag.jpg";
+
+interface Client {
+	name: string;
+	logo: string;
+	url: string;
+	description?: string;
+}
+
+import clientsData from "../content/clients/clients.json";
+const clients = clientsData as Client[];
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+	"../assets/clients/*.{jpeg,jpg,png,gif,webp}",
+);
+---
+
+<Layout title="Home">
+	<section class="py-20">
+		<div class="container mx-auto px-4">
+			<div class="flex flex-col md:flex-row items-center gap-8">
+				<div class="md:w-1/2">
+					<h1 class="mb-6">Students Using Data for Social Good</h1>
+					<p class="text-xl text-gray-700 mb-8">
+						Our organization connects with non-profit organizations to
+						collaborate on a variety of data-driven projects across multiple
+						domains. We are dedicated to leveraging data analysis to create a
+						positive impact in our community.
+					</p>
+					<div class="flex flex-wrap gap-4">
+						<a href="/work-with-us" class="cta-button"> Work With Us </a>
+						<a
+							href="/projects"
+							class="bg-white hover:bg-gray-100 text-accent-600 border border-accent-600 font-medium rounded transition-colors inline-flex items-center justify-center h-10 px-6"
+						>
+							View Our Projects
+						</a>
+					</div>
+				</div>
+				<div class="md:w-1/2 relative">
+					<div
+						class="bg-accent-100 max-w-[600px] max-h-[400px] rounded-lg p-4 relative z-10"
+					>
+						<Image
+							src={hammerschlagImg}
+							alt="Hammerschlag Hall at Carnegie Mellon University"
+							width={1200}
+							height={800}
+							class="rounded-lg shadow-lg"
+						/>
+					</div>
+					<div
+						class="absolute inset-0 bg-accent-200 rounded-lg transform translate-x-4 translate-y-4 -z-10"
+					>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-16 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<h2 class="text-center mb-8">Past Clients</h2>
+			<p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+				We've had the privilege of working with a diverse range of organizations
+				committed to making a positive impact. Here are some of the partners
+				we've collaborated with on data-driven projects.
+			</p>
+			<div
+				class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-6xl mx-auto"
+			>
+				{
+					clients.map((client: Client) => {
+						const imagePath = `../assets/${client.logo}`;
+						return (
+							<div class="flex items-center justify-center">
+								<a
+									href={client.url}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="w-full"
+								>
+									<div class="client-logo w-[150px] h-[150px] flex items-center justify-center mx-auto">
+										{images[imagePath] && (
+											<Image
+												src={images[imagePath]()}
+												alt={`${client.name} logo`}
+												width={300}
+												height={300}
+												class="object-contain max-w-full max-h-full"
+											/>
+										)}
+									</div>
+								</a>
+							</div>
+						);
+					})
+				}
+			</div>
+			<div class="text-center mt-12">
+				<p class="text-gray-600 italic">
+					Interested in becoming our next partner? <a
+						href="/work-with-us"
+						class="font-medium">Get in touch</a
+					>.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-16">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto text-center">
+				<h2 class="mb-6">Get Involved</h2>
+				<p class="text-lg text-gray-700 mb-8">
+					Whether you're a student looking to apply your data skills or an
+					organization seeking data-driven solutions, we'd love to connect with
+					you.
+				</p>
+				<div class="flex flex-wrap justify-center gap-4">
+					<a href="/for-students" class="cta-button h-10">
+						Join as a Student
+					</a>
+					<a
+						href="/work-with-us"
+						class="bg-white hover:bg-gray-100 text-accent-600 border border-accent-600 font-medium rounded transition-colors inline-flex items-center justify-center h-10 px-6"
+					>
+						Partner With Us
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
