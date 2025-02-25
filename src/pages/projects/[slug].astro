@@ -17,12 +17,12 @@ const { Content } = await project.render();
 ---
 
 <Layout title={project.data.title}>
-	<section class="bg-gradient-to-br from-accent-50 to-white py-16">
+	<section class="bg-gradient-to-br from-accent-50 to-white py-12">
 		<div class="container mx-auto px-4">
 			<div class="max-w-4xl mx-auto">
 				<a
 					href="/projects"
-					class="inline-flex items-center text-accent-600 hover:text-accent-800 mb-6"
+					class="inline-flex items-center text-accent-600 hover:text-accent-800 mb-4"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -39,17 +39,17 @@ const { Content } = await project.render();
 					</svg>
 					Back to Projects
 				</a>
-				<h1 class="mb-4">{project.data.title}</h1>
-				<div class="flex flex-wrap items-center text-gray-600 mb-6">
+				<h1 class="mb-3">{project.data.title}</h1>
+				<div class="flex flex-wrap items-center text-gray-600 mb-2">
 					<span class="mr-4">Partner: {project.data.partner}</span>
 					<span>{project.data.timeframe}</span>
 				</div>
 				{
 					project.data.keywords && project.data.keywords.length > 0 && (
-						<div class="flex flex-wrap gap-2 mb-8">
+						<div class="flex flex-wrap gap-2 mb-2">
 							{project.data.keywords.map((keyword) => (
-								<span class="bg-accent-100 text-accent-800 text-sm px-3 py-1 rounded-full">
-									{keyword}
+								<span class="bg-accent-100 text-accent-800 text-sm px-3 py-1 rounded-full border border-accent-200 shadow-sm">
+									#{keyword}
 								</span>
 							))}
 						</div>
@@ -59,12 +59,12 @@ const { Content } = await project.render();
 		</div>
 	</section>
 
-	<section class="py-16">
+	<section class="pt-6 pb-12">
 		<div class="container mx-auto px-4">
 			<div class="max-w-4xl mx-auto">
 				{
 					project.data.image && (
-						<div class="mb-12 rounded-lg overflow-hidden shadow-md">
+						<div class="mb-8 rounded-lg overflow-hidden shadow-md">
 							<img
 								src={project.data.image}
 								alt={project.data.title}

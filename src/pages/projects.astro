@@ -29,23 +29,26 @@ const placeholderImage = "/placeholder-project.svg";
 			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 				{
 					sortedProjects.map((project) => (
-						<div class="bg-white rounded-lg shadow-md overflow-hidden">
+						<div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
 							<div
 								class="h-48 bg-cover bg-center"
 								style={`background-image: url(${project.data.image || placeholderImage})`}
 							/>
-							<div class="p-6">
+							<div class="p-6 flex-grow flex flex-col">
 								<h3 class="text-xl mb-2">{project.data.title}</h3>
 								<p class="text-gray-600 mb-2">
 									Partner: {project.data.partner}
 								</p>
-								<p class="text-gray-600 mb-4">{project.data.timeframe}</p>
-								<a
-									href={`/projects/${project.slug}`}
-									class="text-accent-600 hover:text-accent-800 font-medium"
-								>
-									View Project Details →
-								</a>
+								<p class="text-gray-600 mb-3">{project.data.timeframe}</p>
+								
+								<div class="mt-auto">
+									<a
+										href={`/projects/${project.slug}`}
+										class="text-accent-600 hover:text-accent-800 font-medium"
+									>
+										View Project Details →
+									</a>
+								</div>
 							</div>
 						</div>
 					))
