@@ -1,5 +1,11 @@
 [
   {
+    "name": "Carnegie Mellon University",
+    "logo": "clients/cmu.png",
+    "url": "https://www.cmu.edu/",
+    "description": "Carnegie Mellon University - A leading research university"
+  },
+  {
     "name": "APA",
     "logo": "clients/apa.png",
     "url": "https://apa-pgh.org/",
@@ -41,4 +47,4 @@
     "url": "https://www.friendsoftheriverfront.org/",
     "description": "Friends of the Riverfront - Promoting the development of the Pittsburgh Riverfront"
   }
-] 
+]

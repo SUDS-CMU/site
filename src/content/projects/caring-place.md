@@ -21,4 +21,4 @@ The team analyzed patterns in the types of cases handled to better understand th
 
 - A comprehensive report summarizing findings, trends, and recommendations based on the data analyzed, including various visualizations based on historical case data.
 
-- A presentation delivered at the end of each semester. 
+- A presentation delivered at the end of each semester.
