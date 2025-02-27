@@ -26,7 +26,20 @@ const projectsCollection = defineCollection({
   }),
 });
 
+const boardCollection = defineCollection({
+  type: 'data',
+  schema: ({ image }) => z.array(
+    z.object({
+      name: z.string(),
+      title: z.string(),
+      picture: image(),
+      linkedin: z.string().optional(),
+    })
+  ),
+});
+
 export const collections = {
   'clients': clientsCollection,
   'projects': projectsCollection,
+  'board': boardCollection,
 }; 
