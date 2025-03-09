@@ -4,7 +4,6 @@ partner: "Pittsburgh Innovation & Performance"
 partnerDescription: "Pittsburgh I&P is committed to collaborating with all City departments to help make City services convenient and accessible for residents, maintaining & securing our technology infrastructure, advancing innovative technology solutions, providing project management, data analysis, and process improvement training."
 keywords: ["Green Infrastructure", "Environmental Impact", "Urban Planning"]
 timeframe: "2024 Fall"
-order: 2
 ---
 
 ## Background
@@ -27,4 +26,4 @@ We want to produce data evidence that demonstrate the monetary value of increasi
 
 ## Project Impacts
 
-I&P plans to use the results and feed it into the Green Urban Scenarios Framework to produce simulations of increased tree canopy in Pittsburgh. The data will support the City in public policy creation and tree-planting campaigns. 
+I&P plans to use the results and feed it into the Green Urban Scenarios Framework to produce simulations of increased tree canopy in Pittsburgh. The data will support the City in public policy creation and tree-planting campaigns.

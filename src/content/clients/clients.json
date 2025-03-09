@@ -46,5 +46,50 @@
     "logo": "clients/friendsoftheriverfront.png",
     "url": "https://www.friendsoftheriverfront.org/",
     "description": "Friends of the Riverfront - Promoting the development of the Pittsburgh Riverfront"
+  },
+  {
+    "name": "ARYSE",
+    "logo": "clients/aryse.png",
+    "url": "https://www.arysepgh.org/"
+  },
+  {
+    "name": "Joint Center for Political and Economic Studies",
+    "logo": "clients/joint-center.png",
+    "url": "https://jointcenter.org/"
+  },
+  {
+    "name": "Elizabeth Glaser Pediatric AIDS Foundation",
+    "logo": "clients/egpaf.png",
+    "url": "https://pedaids.org/"
+  },
+  {
+    "name": "Environmental Health Project",
+    "logo": "clients/ehp.png",
+    "url": "https://www.environmentalhealthproject.org/"
+  },
+  {
+    "name": "Uptogether",
+    "logo": "clients/uptogether.png",
+    "url": "https://www.uptogether.org/"
+  },
+  {
+    "name": "New Sun Rising",
+    "logo": "clients/nsr.png",
+    "url": "https://www.newsunrising.org/"
+  },
+  {
+    "name": "Office of Natural Resources Revenue",
+    "logo": "clients/onrr.jpg",
+    "url": "https://onrr.gov/"
+  },
+  {
+    "name": "Campaign Zero",
+    "logo": "clients/campaign-zero.png",
+    "url": "https://campaignzero.org/"
+  },
+  {
+    "name": "Remake Learning",
+    "logo": "clients/remake-learning.png",
+    "url": "https://remakelearning.org/"
   }
 ]

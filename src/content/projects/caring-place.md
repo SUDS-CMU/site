@@ -4,7 +4,6 @@ partner: "A Caring Place"
 partnerDescription: "A Caring Place is an organization that supports both children and caregivers, helping families recover and rebuild after trauma through advocacy and mental health follow-up. Its prevention programs aim to raise awareness and empower community members, teachers, and students to take proactive steps against child abuse."
 keywords: ["Child Advocacy", "Data Analysis", "Social Services"]
 timeframe: "2024 Fall"
-order: 4
 ---
 
 ## Background

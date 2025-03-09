@@ -22,7 +22,6 @@ const projectsCollection = defineCollection({
     image: z.string().optional(),
     timeframe: z.string(),
     draft: z.boolean().optional().default(false),
-    order: z.number().optional(),
   }),
 });
 

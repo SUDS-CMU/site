@@ -4,7 +4,6 @@ partner: "CeaseFirePA"
 partnerDescription: "CeaseFirePA is the Commonwealth's leader advocating for an end to gun violence. They target issues including gun violence in Pennsylvania, firearm suicide, mass shootings, community violence etc. It advocates for gun violence prevention legislation in Pennsylvania and stood up to the gun lobby when they've tried to punish local officials working to save lives or repeal important gun safety laws already in place."
 keywords: ["Gun Violence", "GIS Mapping", "Data Visualization"]
 timeframe: "2023 Spring"
-order: 5
 ---
 
 ## Background
@@ -16,6 +15,7 @@ Gun violence takes the lives or injures 4,600 Pennsylvanians every year. And the
 ### Deliverable
 
 An interactive GIS map of Pennsylvania with:
+
 - Pinpoints of shootings
 - Information on victim: name, link to news articles
 - Label characteristic: mass suicide? mass killing?
@@ -28,4 +28,4 @@ The Gun Violence Archive and The Trace provide individual observations for each 
 
 ### Impact
 
-The resulting map will be used on the website, in the media, and in reports. It will serve as an impactful data visualization. 
+The resulting map will be used on the website, in the media, and in reports. It will serve as an impactful data visualization.

@@ -4,7 +4,6 @@ partner: "Women's Center and Shelter of Greater Pittsburgh"
 partnerDescription: "A non-profit organization that provides an array of services for victims and survivors of domestic violence. Their services include hotline services, support groups, adult individual therapy, children's counseling, various advocacy programs, and emergency shelters."
 keywords: ["Mental Health", "Data Analysis", "Domestic Violence"]
 timeframe: "2023 - 2024"
-order: 3
 ---
 
 ## Background
@@ -19,4 +18,4 @@ Deliverables include but are not limited to:
 
 - Streamlined and automated the data cleaning process to create datasets for the Program Effectiveness Dashboard and Demographics Dashboard.
 
-- Analyzed the response rates for each survey question. This helps WC&S to assess client comfort in disclosing information for self-reported questions and measure efficiency of the data collection process for required fields. 
+- Analyzed the response rates for each survey question. This helps WC&S to assess client comfort in disclosing information for self-reported questions and measure efficiency of the data collection process for required fields.
