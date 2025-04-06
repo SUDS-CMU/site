@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import dscLogo from "../assets/dsc.svg";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -317,6 +319,41 @@ import Layout from "../layouts/Layout.astro";
 					</div>
 				</div>
 
+				<div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-16">
+					<div class="flex flex-col md:flex-row items-center gap-6">
+						<div class="md:w-1/5">
+							<Image
+								src={dscLogo}
+								alt="CMU Data Science Club Logo"
+								width={150}
+								height={150}
+								class="mx-auto"
+							/>
+						</div>
+						<div class="md:w-4/5">
+							<h3 class="text-xl font-medium mb-3">
+								Develop Your Skills with CMU Data Science Club
+							</h3>
+							<p class="text-gray-700 mb-3">
+								Need to strengthen your data science skills before applying? Our
+								sister organization, the <a
+									href="https://cmudsc.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="text-accent-600 hover:text-accent-800 font-medium"
+									>CMU Data Science Club</a
+								>, offers workshops, events, and competitions to help you build
+								the technical foundation you need.
+							</p>
+							<p class="text-gray-700">
+								Their curriculum covers everything from Python basics to
+								advanced machine learning techniques, providing an excellent
+								opportunity to prepare for SUDS projects.
+							</p>
+						</div>
+					</div>
+				</div>
+
 				<div class="bg-accent-50 rounded-lg p-8 text-center">
 					<h2 class="mb-4">Ready to Join?</h2>
 					<p class="text-lg text-gray-700 mb-6">
@@ -336,4 +373,3 @@ import Layout from "../layouts/Layout.astro";
 		</div>
 	</section>
 </Layout>
-

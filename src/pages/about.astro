@@ -1,8 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import { getEntry } from "astro:content";
+import dscLogo from "../assets/dsc.svg";
 import Layout from "../layouts/Layout.astro";
-
 const boardEntry = await getEntry("board", "members");
 const boardMembers = boardEntry?.data || [];
 ---
@@ -48,6 +48,38 @@ const boardMembers = boardEntry?.data || [];
 					various sectors, helping them leverage data to enhance their
 					operations, reach more people, and maximize their impact.
 				</p>
+
+				<h2 class="mb-6">Our Data Science Community</h2>
+				<div class="flex flex-col md:flex-row items-center mb-12 gap-8">
+					<div class="md:w-1/4">
+						<Image
+							src={dscLogo}
+							alt="CMU Data Science Club Logo"
+							width={200}
+							height={200}
+							class="mx-auto"
+						/>
+					</div>
+					<div class="md:w-3/4">
+						<p class="mb-4">
+							SUDS is proud to be part of Carnegie Mellon's vibrant data science
+							ecosystem. Our sister organization, the <a
+								href="https://cmudsc.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="text-accent-600 hover:text-accent-800 font-medium"
+								>CMU Data Science Club</a
+							>, focuses on helping students develop their data science skills
+							through events, workshops, and competitions.
+						</p>
+						<p class="mb-4">
+							While SUDS emphasizes applying data skills through real-world
+							consulting projects for social good, the Data Science Club
+							provides valuable learning opportunities for students looking to
+							build and enhance their technical abilities in the field.
+						</p>
+					</div>
+				</div>
 
 				<h2 class="mb-6">How We Work</h2>
 				<div class="grid md:grid-cols-3 gap-8 mb-16">
@@ -128,7 +160,7 @@ const boardMembers = boardEntry?.data || [];
 				</div>
 
 				<h2 class="mb-8">Meet the Board</h2>
-				
+
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
 					{
 						boardMembers.map((member) => (
@@ -144,7 +176,9 @@ const boardMembers = boardEntry?.data || [];
 								</div>
 								<div>
 									<div class="flex justify-between items-center">
-										<h3 class="text-lg font-semibold tracking-tight text-gray-900 leading-none">{member.name}</h3>
+										<h3 class="text-lg font-semibold tracking-tight text-gray-900 leading-none">
+											{member.name}
+										</h3>
 										{member.linkedin && (
 											<a
 												href={member.linkedin}
